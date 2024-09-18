@@ -1,0 +1,15 @@
+spring:
+  jackson:
+    default-property-inclusion: non_null
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/call-external
+    username: postgres
+    password: 3Dmaxdesign6991
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+  liquibase:
+    change-log: classpath:liquibase/changelog-master.yml
